@@ -40,21 +40,21 @@ struct ImageViewLayout {
         case .scaleToFill:
             return .zero
         case .scaleAspectFit:
-            return CGPoint(x: (container.width - image.width) / 2, y: (container.width - image.width) / 2)
+            return CGPoint(x: (container.width - image.width) / 2, y: (container.height - image.height) / 2)
         case .scaleAspectFill:
-            return CGPoint(x: (container.width - image.width) / 2, y: (container.width - image.width) / 2)
+            return CGPoint(x: (container.width - image.width) / 2, y: (container.height - image.height) / 2)
         case .redraw:
             return previousPosition
         case .center:
-            return CGPoint(x: image.width / 2, y: image.height / 2)
+            return CGPoint(x: (container.width - image.width) / 2, y: (container.height - image.height) / 2)
         case .top:
-            return CGPoint(x: image.width / 2, y: 0)
+            return CGPoint(x: (container.width - image.width) / 2, y: 0)
         case .bottom:
-            return CGPoint(x: image.width / 2, y: container.height - image.height)
+            return CGPoint(x: (container.width - image.width) / 2, y: container.height - image.height)
         case .left:
-            return CGPoint(x: 0, y: image.height / 2)
+            return CGPoint(x: 0, y: (container.height - image.height) / 2)
         case .right:
-            return CGPoint(x: container.width - image.width, y: image.height / 2)
+            return CGPoint(x: container.width - image.width, y: (container.height - image.height) / 2)
         case .topLeft:
             return .zero
         case .topRight:

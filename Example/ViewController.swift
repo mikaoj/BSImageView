@@ -32,7 +32,7 @@ class ViewController: UIViewController {
         updateButton(contentMode: nextContentMode)
         button.isUserInteractionEnabled = false
         
-        UIView.animate(withDuration: 5, animations: {
+        UIView.animate(withDuration: 0.3, animations: {
             self.bsImageView.contentMode = nextContentMode
             self.uiImageView.contentMode = nextContentMode
         }) { (completed) in

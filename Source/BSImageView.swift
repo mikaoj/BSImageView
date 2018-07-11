@@ -21,7 +21,10 @@ public class BSImageView: UIView {
     }
     
     override public var contentMode: UIViewContentMode {
-        didSet { setNeedsLayout() }
+        didSet {
+            setNeedsLayout()
+            layoutIfNeeded()
+        }
     }
     
     override public init(frame: CGRect) {
@@ -67,6 +70,7 @@ extension BSImageView {
         set {
             imageView.image = newValue
             setNeedsLayout()
+            layoutIfNeeded()
         }
     }
     

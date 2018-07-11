@@ -18,6 +18,7 @@
 		5517ACF420F29ECD006E9F69 /* BSImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5517ACF320F29ECD006E9F69 /* BSImageView.swift */; };
 		5517ACF620F29FD5006E9F69 /* ImageViewLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5517ACF520F29FD5006E9F69 /* ImageViewLayout.swift */; };
 		5517ACF820F2B906006E9F69 /* BSImageView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5517ACC320F29DA3006E9F69 /* BSImageView.framework */; };
+		558CD90020F6CA43006C10EA /* BSImageView.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 5517ACC320F29DA3006E9F69 /* BSImageView.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +30,20 @@
 			remoteInfo = BSImageView;
 		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		558CD8FF20F6CA31006C10EA /* Copy Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				558CD90020F6CA43006C10EA /* BSImageView.framework in Copy Frameworks */,
+			);
+			name = "Copy Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		5517ACC320F29DA3006E9F69 /* BSImageView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BSImageView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -193,6 +208,7 @@
 				5517ACDD20F29E91006E9F69 /* Sources */,
 				5517ACDE20F29E91006E9F69 /* Frameworks */,
 				5517ACDF20F29E91006E9F69 /* Resources */,
+				558CD8FF20F6CA31006C10EA /* Copy Frameworks */,
 			);
 			buildRules = (
 			);

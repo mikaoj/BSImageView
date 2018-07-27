@@ -21,13 +21,20 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="NXV-Xm-Xvh">
                                 <rect key="frame" x="8" y="28" width="359" height="631"/>
                                 <subviews>
-                                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8hi-ho-zvm" customClass="BSImageView" customModule="BSImageView">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cT0-c3-mgf">
                                         <rect key="frame" x="0.0" y="0.0" width="359" height="311.5"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BSImageView" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t1T-vj-8ac">
+                                            <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8hi-ho-zvm" customClass="BSImageView" customModule="BSImageView">
+                                                <rect key="frame" x="0.0" y="0.0" width="359" height="311.5"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="image" keyPath="image" value="example"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BSImageView" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GO7-aR-rIv">
                                                 <rect key="frame" x="0.0" y="0.0" width="359" height="21"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="height" constant="21" id="aKf-eA-HJm"/>
+                                                    <constraint firstAttribute="height" constant="21" id="Lxp-sn-AqG"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
@@ -36,17 +43,21 @@
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
-                                            <constraint firstAttribute="trailing" secondItem="t1T-vj-8ac" secondAttribute="trailing" id="Mr0-dZ-g5P"/>
-                                            <constraint firstItem="t1T-vj-8ac" firstAttribute="leading" secondItem="8hi-ho-zvm" secondAttribute="leading" id="OlQ-Uz-NhL"/>
-                                            <constraint firstItem="t1T-vj-8ac" firstAttribute="top" secondItem="8hi-ho-zvm" secondAttribute="top" id="yVZ-Fa-BIr"/>
+                                            <constraint firstItem="8hi-ho-zvm" firstAttribute="leading" secondItem="cT0-c3-mgf" secondAttribute="leading" id="3i2-bJ-TF6"/>
+                                            <constraint firstAttribute="trailing" secondItem="GO7-aR-rIv" secondAttribute="trailing" id="HgH-bw-uE0"/>
+                                            <constraint firstAttribute="trailing" secondItem="8hi-ho-zvm" secondAttribute="trailing" id="IVO-bh-2nW"/>
+                                            <constraint firstItem="GO7-aR-rIv" firstAttribute="top" secondItem="cT0-c3-mgf" secondAttribute="top" id="SBF-hT-rlt"/>
+                                            <constraint firstItem="GO7-aR-rIv" firstAttribute="leading" secondItem="cT0-c3-mgf" secondAttribute="leading" id="TEP-D3-YgT"/>
+                                            <constraint firstItem="8hi-ho-zvm" firstAttribute="top" secondItem="cT0-c3-mgf" secondAttribute="top" id="YWG-cK-Sdk"/>
+                                            <constraint firstAttribute="bottom" secondItem="8hi-ho-zvm" secondAttribute="bottom" id="jQO-nL-KQN"/>
                                         </constraints>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="image" keyPath="image" value="example"/>
-                                        </userDefinedRuntimeAttributes>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EkX-SR-poE">
                                         <rect key="frame" x="0.0" y="319.5" width="359" height="311.5"/>
                                         <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="example" translatesAutoresizingMaskIntoConstraints="NO" id="HgF-Vv-yRz">
+                                                <rect key="frame" x="0.0" y="-0.5" width="359" height="311.5"/>
+                                            </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="UIImageView" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Btr-nn-FPD">
                                                 <rect key="frame" x="0.0" y="0.0" width="359" height="21"/>
                                                 <constraints>
@@ -56,9 +67,6 @@
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="example" translatesAutoresizingMaskIntoConstraints="NO" id="HgF-Vv-yRz">
-                                                <rect key="frame" x="0.0" y="0.0" width="359" height="311.5"/>
-                                            </imageView>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="map-Yg-0tj">
                                                 <rect key="frame" x="0.0" y="281.5" width="359" height="30"/>
                                                 <constraints>
@@ -107,6 +115,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="example" width="1920" height="927"/>
+        <image name="example" width="1026" height="684"/>
     </resources>
 </document>

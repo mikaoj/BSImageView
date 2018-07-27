@@ -18,15 +18,26 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         uiImageView.contentMode = bsImageView.contentMode
         updateButton(contentMode: bsImageView.contentMode)
+        
+        bsImageView.layer.borderColor = UIColor.black.cgColor
+        bsImageView.layer.borderWidth = 1
+        bsImageView.layer.cornerRadius = 5
+        uiImageView.layer.borderColor = UIColor.black.cgColor
+        uiImageView.layer.borderWidth = 1
+        uiImageView.layer.cornerRadius = 5
     }
     
     @IBAction func changeContentModeTapped(_ sender: UIButton) {
         let currentContentMode = bsImageView.contentMode
-        let nextContentMode: UIViewContentMode
+        var nextContentMode: UIViewContentMode
         if currentContentMode.rawValue == 12 {
             nextContentMode = UIViewContentMode(rawValue: 0)!
         } else {
             nextContentMode = UIViewContentMode(rawValue: currentContentMode.rawValue + 1)!
+        }
+        
+        if nextContentMode == .redraw {
+            nextContentMode = UIViewContentMode(rawValue: currentContentMode.rawValue + 2)!
         }
         
         updateButton(contentMode: nextContentMode)

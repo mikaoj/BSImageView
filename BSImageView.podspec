@@ -7,10 +7,11 @@ Pod::Spec.new do |s|
                    DESC
 
   s.homepage     = "https://github.com/mikaoj/BSImageView"
-  s.screenshots  = "https://github.com/mikaoj/demo/blob/master/ezgif-2-12b4be73cd.gif"
+  # s.screenshots  = "https://github.com/mikaoj/demo/blob/master/ezgif-2-12b4be73cd.gif"
   s.license      = "MIT"
   s.author             = { "Joakim Gyllström" => "joakim@backslashed.se" }
   s.platform     = :ios, "8.0"
+  s.swift_version = "4.1"
   s.source       = { :git => "https://github.com/mikaoj/BSImageView.git", :tag => "#{s.version}" }
   s.source_files  = "Source/**/*.swift"
 end

@@ -19,6 +19,7 @@
 		5517ACF620F29FD5006E9F69 /* ImageViewLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5517ACF520F29FD5006E9F69 /* ImageViewLayout.swift */; };
 		5517ACF820F2B906006E9F69 /* BSImageView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5517ACC320F29DA3006E9F69 /* BSImageView.framework */; };
 		558CD90020F6CA43006C10EA /* BSImageView.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 5517ACC320F29DA3006E9F69 /* BSImageView.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		559BF75E210C6B9200090252 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 559BF75D210C6B9200090252 /* LICENSE */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +62,8 @@
 		5517ACEF20F29E92006E9F69 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5517ACF320F29ECD006E9F69 /* BSImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BSImageView.swift; sourceTree = "<group>"; };
 		5517ACF520F29FD5006E9F69 /* ImageViewLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewLayout.swift; sourceTree = "<group>"; };
+		559BF75C210C6B5100090252 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		559BF75D210C6B9200090252 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +96,8 @@
 		5517ACB920F29DA2006E9F69 = {
 			isa = PBXGroup;
 			children = (
+				559BF75C210C6B5100090252 /* README.md */,
+				559BF75D210C6B9200090252 /* LICENSE */,
 				5517ACC520F29DA3006E9F69 /* Source */,
 				5517ACD320F29E72006E9F69 /* Tests */,
 				5517ACE220F29E91006E9F69 /* Example */,
@@ -266,6 +271,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				559BF75E210C6B9200090252 /* LICENSE in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

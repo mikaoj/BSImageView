@@ -1,7 +1,7 @@
 #  BSImageView
 BSImageView is an image view which lets you animate contentMode changes.
 
-[demo]: https://github.com/mikaoj/demo/blob/master/ezgif-2-12b4be73cd.gif "Demo"
+![demo](https://github.com/mikaoj/demo/blob/master/ezgif-2-12b4be73cd.gif "Demo")
 
 ## Usage
 

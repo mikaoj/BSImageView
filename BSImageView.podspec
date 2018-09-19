@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "BSImageView"
-  s.version      = "1.0.1"
+  s.version      = "1.0.2"
   s.summary      = "An image view which lets you animate changes to content mode"
   s.description  = <<-DESC
 			An image view which, unlike UIImageView, lets you animate chnages to its content mode.

@@ -43,15 +43,15 @@ class ViewController: UIViewController {
     
     @IBAction func changeContentModeTapped(_ sender: UIButton) {
         let currentContentMode = bsImageView.contentMode
-        var nextContentMode: UIViewContentMode
+        var nextContentMode: UIView.ContentMode
         if currentContentMode.rawValue == 12 {
-            nextContentMode = UIViewContentMode(rawValue: 0)!
+            nextContentMode = UIView.ContentMode(rawValue: 0)!
         } else {
-            nextContentMode = UIViewContentMode(rawValue: currentContentMode.rawValue + 1)!
+            nextContentMode = UIView.ContentMode(rawValue: currentContentMode.rawValue + 1)!
         }
         
         if nextContentMode == .redraw {
-            nextContentMode = UIViewContentMode(rawValue: currentContentMode.rawValue + 2)!
+            nextContentMode = UIView.ContentMode(rawValue: currentContentMode.rawValue + 2)!
         }
         
         self.updateButton(contentMode: nextContentMode)
@@ -64,12 +64,12 @@ class ViewController: UIViewController {
         }
     }
     
-    private func updateButton(contentMode: UIViewContentMode) {
+    private func updateButton(contentMode: UIView.ContentMode) {
         button.setTitle("Content mode: \(contentMode)", for: .normal)
     }
 }
 
-extension UIViewContentMode: CustomDebugStringConvertible {
+extension UIView.ContentMode: CustomDebugStringConvertible {
     public var debugDescription: String {
         switch self {
         case .scaleToFill:

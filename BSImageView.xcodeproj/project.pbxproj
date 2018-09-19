@@ -20,6 +20,7 @@
 		5517ACF820F2B906006E9F69 /* BSImageView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5517ACC320F29DA3006E9F69 /* BSImageView.framework */; };
 		558CD90020F6CA43006C10EA /* BSImageView.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 5517ACC320F29DA3006E9F69 /* BSImageView.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		559BF75E210C6B9200090252 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 559BF75D210C6B9200090252 /* LICENSE */; };
+		55F7021A215264CB00AB1CB9 /* BSImageView.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 55F70219215264CB00AB1CB9 /* BSImageView.podspec */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +65,7 @@
 		5517ACF520F29FD5006E9F69 /* ImageViewLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewLayout.swift; sourceTree = "<group>"; };
 		559BF75C210C6B5100090252 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		559BF75D210C6B9200090252 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		55F70219215264CB00AB1CB9 /* BSImageView.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = BSImageView.podspec; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +98,7 @@
 		5517ACB920F29DA2006E9F69 = {
 			isa = PBXGroup;
 			children = (
+				55F70219215264CB00AB1CB9 /* BSImageView.podspec */,
 				559BF75C210C6B5100090252 /* README.md */,
 				559BF75D210C6B9200090252 /* LICENSE */,
 				5517ACC520F29DA3006E9F69 /* Source */,
@@ -236,13 +239,14 @@
 				TargetAttributes = {
 					5517ACC220F29DA3006E9F69 = {
 						CreatedOnToolsVersion = 9.4.1;
-						LastSwiftMigration = 0940;
+						LastSwiftMigration = 1000;
 					};
 					5517ACD120F29E72006E9F69 = {
 						CreatedOnToolsVersion = 9.4.1;
 					};
 					5517ACE020F29E91006E9F69 = {
 						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 1000;
 					};
 				};
 			};
@@ -271,6 +275,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				55F7021A215264CB00AB1CB9 /* BSImageView.podspec in Resources */,
 				559BF75E210C6B9200090252 /* LICENSE in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -493,7 +498,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -519,7 +524,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = se.backslashed.BSImageView;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -575,7 +580,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = se.backslashed.Example;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -593,7 +598,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = se.backslashed.Example;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
